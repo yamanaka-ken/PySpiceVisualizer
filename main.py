@@ -1,6 +1,5 @@
 import matplotlib.pyplot as plt
 from PyLTSpice import RawRead
-import math
 
 #.rawファイルを読み込む。
 LTR = RawRead(r'./LTSpice/TEST.raw')
@@ -35,4 +34,4 @@ for step in range(len(steps)):
 ax.legend()  # order a legend
 ax2.legend()  # order a legend
 
-plt.show()
+plt.savefig('./LTSpice/TEST.png')
