@@ -1,14 +1,21 @@
-import matplotlib.pyplot as plt
-from PyLTSpice import SimRunner, SpiceEditor, LTspice
-# from PyLTSpice import RawRead, SimCommander
+from PyLTSpice import SimRunner
+from PyLTSpice import SpiceEditor
 
-# Force another simulatior
-simulator = r"C:/Users/ymnk2/Documents/XVIIx64.exe"
+# change place simulatior location
+simulator = r"C:\Program Files\LTC\LTspiceXVII\XVIIx64.exe"
 
+# select spice model
 LTC = SimRunner(output_folder='./output')
-LTC.create_netlist("LTSpice/TEST.asc")
+LTC.create_netlist('./LTSpice/TEST.asc')
+netlist = SpiceEditor('./LTSpice/TEST.net')
+netlist.set_component_value('fsig', '500')
+
+for fsig in (500,1000):
+    netlist.set_component_value('fsig', fsig)
+    print("frequency", fsig)
+    LTC.run(netlist)
 
 
 
-# LTC = SimCommander(r'C:/Users/ymnk2/Documents/GitHub/PySpiceVisualizer/LTSpice/TEST.asc')
+
 
