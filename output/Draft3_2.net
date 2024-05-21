@@ -4,7 +4,7 @@ V1 N001 0 SINE(0 0.5 {fsig})
 C1 N002 N003 {C}
 R2 N003 0 {R1}
 V2 N001 N002 1
-.param R=1m R1=1 C=10m fsig=10
+.param R=1m R1=1 C=10m fsig=200
 .tran 0 {f(fsig)} {g(fsig)}
 .func f(fsig) {7/fsig}
 .func g(fsig) {5/fsig}
