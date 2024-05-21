@@ -2,6 +2,7 @@ from PyLTSpice import SimRunner
 from PyLTSpice import SpiceEditor
 from PyLTSpice.log.ltsteps import LTSpiceLogReader
 from PyLTSpice import RawRead
+from scipy import interpolate
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -38,8 +39,19 @@ for raw,log in LTC:
 
     for step in range(len(steps)):
         # print(steps[step])
-        plt.plot(time.get_wave(step), Vn002.get_wave(step))
-        plt.savefig(f'./Draft3_{step}.png')
+        time_array = time.get_wave(step)
+        voltage_array = Vn002.get_wave(step)
+        f = interpolate.interp1d(time_array, voltage_array)
+        with open(f'./output/Draft3_{step}.txt','w') as f:
+            x_ax =np.arange(time_array[0],time_array[-1],10**-6)
+            # y_ax =f(x_ax)   
+            for x in zip(x_ax):     
+                f.write(f"{x}\n")
+            print(type(x_ax))
+        # plt.plot(time.get_wave(step), Vn002.get_wave(step))
+        # plt.savefig(f'./Draft3_{step}.png')
+
+
 
 
 
