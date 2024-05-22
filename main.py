@@ -32,8 +32,8 @@ for path in out_file:
     # apply window function
     # hamming = windows.hamming(N)
     # time = df.iloc[:,0]*hamming
-    # voltage = df.iloc[:,1]*hamming
-    # current = df.iloc[:,2]*hamming
+    # voltage = df.iloc[:,1] *hamming
+    # current = df.iloc[:,2] *hamming
 
     # Fourier transform
     freq = np.fft.rfftfreq(N, d=dt)
