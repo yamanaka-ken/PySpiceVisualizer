@@ -1,5 +1,6 @@
+<span style="color: red;">
 # PySpiceVisualizer
-
+</span>
 ## Commnet
 Due to a confidentiality agreement for the joint research, I created a different code and circuit from the one used in the research. This is a program I created to use for job hunting.
 
@@ -15,9 +16,12 @@ This asc file is included by default.
 2. you can see the frequency characteristics using numpy.
 
 ## Requirements
-* download LTSpice
-* pip install PySerial
-* pip install glob
-* pip install natsort
-* pip install matplotlib
-* pip install numpy
+| description | how to / command |
+| Analog Device| download LTSpice |
+| pip install PySerial |
+| pip install glob |
+| pip install natsort |
+| pip install matplotlib |
+| pip install numpy |
+
+## Refernce
