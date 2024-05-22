@@ -17,11 +17,14 @@ This asc file is included by default.
 
 ## Requirements
 | description | how to/command |
-| Analog Device| download LTSpice |
-* pip install PySerial
+| ---- | ---- |
+| Analog Device| download LTSpice[^1] |
+* pip install PySerial[^2]
 * pip install glob
 * pip install natsort
 * pip install matplotlib
 * pip install numpy
 
 ## Refernce
+[^1]:
+[^2]:
