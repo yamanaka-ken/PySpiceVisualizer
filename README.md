@@ -26,5 +26,5 @@ This asc file is included by default.
 * pip install numpy
 
 ## Refernce
-[^1]: [download from this cite] (https://www.analog.com/jp/resources/design-tools-and-calculators/ltspice-simulator.html)
-[^2]: [for more information] (https://pyltspice.readthedocs.io/en/latest/genindex.html) 
+[^1]: [download from this cite](https://www.analog.com/jp/resources/design-tools-and-calculators/ltspice-simulator.html "download from this cite")
+[^2]: [for more information](https://pyltspice.readthedocs.io/en/latest/genindex.html "for more information") 
