@@ -1,6 +1,6 @@
-<span style="color: red;">
+
 # PySpiceVisualizer
-</span>
+
 ## Commnet
 Due to a confidentiality agreement for the joint research, I created a different code and circuit from the one used in the research. This is a program I created to use for job hunting.
 
