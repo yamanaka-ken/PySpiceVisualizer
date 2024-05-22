@@ -16,12 +16,12 @@ This asc file is included by default.
 2. you can see the frequency characteristics using numpy.
 
 ## Requirements
-| description | how to / command |
+| description | how to/command |
 | Analog Device| download LTSpice |
-| pip install PySerial |
-| pip install glob |
-| pip install natsort |
-| pip install matplotlib |
-| pip install numpy |
+* pip install PySerial
+* pip install glob
+* pip install natsort
+* pip install matplotlib
+* pip install numpy
 
 ## Refernce
